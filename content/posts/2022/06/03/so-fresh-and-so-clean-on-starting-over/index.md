@@ -10,8 +10,8 @@ usePageBundles: true
 featureImage: 'https://images.unsplash.com/photo-1612251248897-e3afc34c6920?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=edges&w=1169&h=350&q=80' # Top image on post.
 featureImageAlt: 'A fire in a winter forest' # Alternative text for featured image.
 featureImageCap: 'Photo by Vadim Sadovski on Unsplash' # Caption (optional).
-thumbnail: 'https://images.unsplash.com/photo-1612251248897-e3afc34c6920?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=edges&w=1169&h=350&q=80' # Image in lists of posts.
-shareImage: 'https://images.unsplash.com/photo-1612251248897-e3afc34c6920?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=edges&w=1169&h=350&q=80' # For SEO and social media snippets.
+thumbnail: 'https://images.unsplash.com/photo-1612251248897-e3afc34c6920?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=edges&w=1169&h=800&q=80' # Image in lists of posts.
+shareImage: 'https://images.unsplash.com/photo-1612251248897-e3afc34c6920?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=edges&w=1169&h=800&q=80' # For SEO and social media snippets.
 
 categories:
   - miscellaneous
