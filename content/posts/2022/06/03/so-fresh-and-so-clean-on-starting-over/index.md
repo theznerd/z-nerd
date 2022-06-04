@@ -21,7 +21,7 @@ tags:
 ## It's wasn't all that bad was it?
 I've grown a lot over seven years of blogging. Looking back it appears my first post was on
 June 5th of 2015, so seven years almost to the day. I've gone from using WordPress to Hugo to
-now using an actual build process over whatever it was I _thought_ I was doing before. A good 
+now using an actual build process over whatever it was I _thought_ I was doing before. A 
 portion of the content from the old blog is outdated, misguided, or just downright wrong. So
 to answer the question at hand, no, not all of it was that bad, but enough of it is so old or
 non-relevant anymore I don't want to keep it as primary content.

@@ -4,6 +4,7 @@ description = "Well.. this one is all about me."
 date = "2022-06-02"
 aliases = ["about-us", "about-hugo", "contact"]
 author = "Nathan Ziehnert"
+comments = false
 +++
 
 Z-Nerd. It's a play on my last name (Ziehnert - ZEE-nert). I think people used this 

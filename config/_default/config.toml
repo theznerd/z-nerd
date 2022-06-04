@@ -6,7 +6,7 @@ copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all r
 # canonifyurls = true
 paginate = 10
 theme = ["github.com/theznerd/hugo-clarity-znerd"]
-disqusShortname = ""
+#disqusShortname = ""
 
 DefaultContentLanguage = "en"
 # [languages]
