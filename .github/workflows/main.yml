@@ -1,0 +1,37 @@
+name: Update Website
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  
+jobs:
+  build:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Chekcout
+        uses: actions/checkout@v3
+      
+      - name: Setup Hugo
+        env:
+          HUGO_VERSION: 0.100.1
+        run: |
+          mkdir ~/hugo
+          cd ~/hugo
+          curl -L "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz" --output hugo.tar.gz
+          tar -xvzf hugo.tar.gz
+          suddo mv hugo /usr/local/bin
+          
+      - name: Build
+        run: hugo --minify
+      
+      - name: Install SSH Key
+        run: |
+          install -m 600 -D /dev/null ~/.ssh/id_rsa
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          echo "${{ secrets.KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+      
+      - name: Deploy
+        run: rsync --archive --delete --stats -e 'ssh -p 21098' './public/' ${{ secrets.REMOTE_DEST }}
