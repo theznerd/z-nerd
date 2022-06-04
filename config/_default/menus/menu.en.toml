@@ -27,6 +27,11 @@
   url = "about/"
   weight = -107
 
+[[main]]
+  name = "Looking for old posts?"
+  url = "https://archive.z-nerd.com"
+  weight = -106
+
 # social menu links
 
 [[social]]
