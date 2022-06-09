@@ -1,0 +1,4 @@
+RewriteEngine on
+RedirectMatch 301 ^/blog/(.*)$ http://archive.z-nerd.com/blog/$1
+RewriteCond %{HTTP_HOST} ^www.z-nerd.com [NC]
+RewriteRule ^(.*)$ http://z-nerd.com/$1 [L,R=301]
