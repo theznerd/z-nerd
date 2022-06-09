@@ -2,8 +2,9 @@
 title: "RDP'ing to Scale Set Cloud Management Gateways"
 description: "Honestly, there should be no sane reason for you to do this. I'm also not a sane person and needed (wanted) to look at IIS logs."
 summary: "Honestly, there should be no sane reason for you to do this. I'm also not a sane person and needed (wanted) to look at IIS logs." # For the post in lists.
-date: '2022-06-06'
+date: '2022-06-08'
 aliases:
+keywords: ["memcm","cmg","cloud management gateway","sccm","Azure","Bastion"]
 author: 'Nathan Ziehnert'
 usePageBundles: true
 toc: true
