@@ -29,7 +29,7 @@ jobs:
         run: |
           install -m 600 -D /dev/null ~/.ssh/id_rsa
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          ssh-keyscan -p 21098 -H ssh.z-nerd.com >> ~/.ssh/known_hosts
+          ssh-keyscan -t rsa -p 21098 ssh.z-nerd.com >> ~/.ssh/known_hosts
       
       - name: Deploy
         run: rsync --archive --delete --stats -e 'ssh -p 21098' './public/' ${{ secrets.REMOTE_DEST }}
