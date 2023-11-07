@@ -29,6 +29,9 @@ jobs:
         run: |
           install -m 600 -D /dev/null ~/.ssh/id_rsa
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          echo "Host ssh.z-nerd.com" >> ~/.ssh/config
+          echo "  HostKeyAlgorithms +ssh-rsa" >> ~/.ssh/config
+          echo "  PubkeyAcceptedKeyTypes +ssh-rsa" >> ~/.ssh/config
           ssh-keyscan -t rsa -p 21098 ssh.z-nerd.com >> ~/.ssh/known_hosts
       
       - name: Deploy
