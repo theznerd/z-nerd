@@ -23,7 +23,7 @@ tags:
 ## Clocks (or locks... whatever)
 
 Day one was a fairly simple problem - keep track of where the dial is pointing. You can imagine this as a
-clock, or a combination lock, or a circle with numbers on it. Whatever flys your plane. The dial ranges 
+clock, or a combination lock, or a circle with numbers on it. Whatever flies your plane. The dial ranges 
 from 0 - 99 and you're given a list of instructions for how far to turn the dial, and in which direction.
 Nevermind that the elves have left and right backward...
 

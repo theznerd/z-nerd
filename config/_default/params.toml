@@ -2,7 +2,6 @@
 enableSearch = true
 
 # socials
-twitter = "@theznerd"
 largeTwitterCard = false # set to true if you want to show a large twitter card image. The default is a small twitter card image
 introDescription = "Blogger. Speaker. This site houses a bunch of random stuff including Azure, PowerShell, Intune, MEMCM/ConfigMgr, and maybe a thing or two about C#."
 introURL = "about/" # set the url for the 'read more' button below the introDescription, or set to false to not show the button
